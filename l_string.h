@@ -12,6 +12,6 @@ void destroy_lstring(l_string *first);
 
 l_string *initialize_lstring();
 
-l_string *read_lstring();
+l_string *read_lstring(char b_char);
 
 void print_lstring(l_string *first);

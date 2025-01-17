@@ -1,6 +1,8 @@
-#include "l_string.h"
+#include "l_string.c"
 
 int main(int argc, char **argv){
+    printf("I want to cry\n");
+
     l_string *str = read_lstring();
 
     print_lstring(str);
