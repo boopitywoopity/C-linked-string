@@ -1,4 +1,4 @@
-#include "l_string.c"
+#include "l_string.h"
 
 int main(int argc, char **argv){
     printf("I want to cry\n");

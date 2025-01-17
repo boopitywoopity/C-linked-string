@@ -10,12 +10,16 @@ typedef struct l_string_node{
 
 static char get_putc();
 
+/*
+ * @param first the first node making up the string
+ * @in the character added to the string
+ */
 void create_lstring(l_string *first, char in){
     // keeps the nodes so you dont have to cycle through them each time
     static l_string *first_s = NULL;
     static l_string *last_s = NULL;
 
-    // if this is a new string
+    // Initial assignment when function is first ran
     if (first_s == NULL ){
         first_s = first;
         first_s->c = in;
@@ -81,6 +85,7 @@ l_string *initialize_lstring(){
 /*
  * Reads in a character and prints it back to stdout
  * Used when the terminal settings have been modified to disable echoing
+ * @return character from stdin
 */
 static char get_putc(){
     char in = getchar();
